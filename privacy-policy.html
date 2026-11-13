@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chính sách quyền riêng tư · DexB</title>
+  <style>
+        :root {
+            color-scheme: dark;
+            --bg: #0b0f14;
+            --panel: #121922;
+            --panel-2: #18212b;
+            --text: #eef4fb;
+            --muted: #aab7c7;
+            --accent: #8fd9ff;
+            --line: #283445;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background:
+                radial-gradient(circle at top, rgba(255, 255, 255, 0.05), transparent 42%),
+                linear-gradient(180deg, #0d1218 0%, var(--bg) 100%);
+            color: var(--text);
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.65;
+        }
+
+        body {
+            padding: 32px 18px 64px;
+        }
+
+        .wrap {
+            max-width: 920px;
+            margin: 0 auto;
+        }
+
+        .hero,
+        .section {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            padding: 24px;
+            backdrop-filter: blur(8px);
+        }
+
+        .hero {
+            margin-bottom: 18px;
+        }
+
+        .section {
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 3.8vw, 3rem);
+            letter-spacing: -0.03em;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        h3 {
+            font-size: 1rem;
+            color: #d8e7f8;
+        }
+
+        p,
+        li {
+            color: var(--muted);
+            margin: 0 0 10px;
+        }
+
+        ul {
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 14px 0 0;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            min-height: 34px;
+            padding: 0 12px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--panel-2);
+            color: #d7e8fa;
+            font-size: 0.92rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 16px;
+        }
+
+        .note {
+            border-left: 3px solid var(--accent);
+            padding-left: 12px;
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 1px 6px;
+            border-radius: 6px;
+            color: #f2f7fd;
+        }
+
+        .document-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px 14px;
+            color: var(--muted);
+            font-size: .92rem;
+        }
+
+        #english:not(:target), main:has(#english:target) #vietnamese {
+            display: none;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 4px;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 18px 14px 32px;
+            }
+
+            .hero, .section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="document" id="vietnamese" aria-labelledby="vietnamese-title">
+      <header class="hero">
+        <h1 id="vietnamese-title">Chính sách quyền riêng tư</h1>
+        <p class="lead">Chính sách này giải thích cách DexB, ứng dụng Android do BEAT phát hành, xử lý dữ liệu khi bạn dùng màn hình ngoài.</p>
+        <div class="document-meta">
+          <time datetime="2026-11-13">Cập nhật 13/11/2026</time>
+          <a class="language-link" href="#english" lang="en">English</a>
+        </div>
+      </header>
+      <section class="section">
+        <h2>Thông tin DexB xử lý trên thiết bị</h2>
+        <ul>
+          <li><strong>Gỡ lỗi không dây.</strong> DexB dùng mạng cục bộ để tìm dịch vụ ghép đôi và kết nối ADB của chính điện thoại. Mã ghép đôi nhập từ thông báo chỉ dùng để xác thực với Android. DexB lưu khóa ghép đôi trong vùng lưu trữ riêng của ứng dụng và dùng mã xác thực cục bộ để điều khiển dịch vụ.</li>
+          <li><strong>Màn hình ngoài và cửa sổ.</strong> DexB đọc trạng thái thiết bị, thông tin màn hình và cửa sổ cần thiết để mở, hiển thị và đóng phiên desktop. Nội dung cửa sổ được hiển thị lên màn hình ngoài mà bạn kết nối. DexB không ghi hình hay gửi nội dung đó cho BEAT.</li>
+          <li><strong>Thiết bị nhập liệu.</strong> DexB xác định chuột và bàn phím để chuyển chúng sang màn hình ngoài. Một số thao tác nhấp chuột được xử lý tức thời cho chức năng điều khiển. DexB không lưu nội dung bạn gõ hay lịch sử thao tác.</li>
+          <li><strong>Cài đặt và chẩn đoán.</strong> DexB lưu trạng thái ghép đôi, tùy chọn tự mở và trạng thái ô Cài đặt nhanh. Dịch vụ có thể lưu tệp tạm, thông tin khôi phục cấu hình và nhật ký kỹ thuật cục bộ như mã màn hình, trạng thái phiên và lỗi. DexB kiểm tra nguồn cài đặt và chữ ký ứng dụng trên thiết bị.</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>Quyền, kết nối và chia sẻ</h2>
+        <p>Quyền mạng và Wi-Fi phục vụ tìm kiếm và kết nối ADB cục bộ. Quyền thông báo dùng để nhập mã ghép đôi và báo kết quả. DexB có thể chạy dịch vụ ghép đôi trong lúc bạn đang ở Cài đặt Android. DexB không yêu cầu quyền truy cập danh bạ, vị trí, camera hoặc micrô.</p>
+        <p>DexB không yêu cầu tài khoản và không tích hợp quảng cáo, phân tích hành vi hay tự gửi báo cáo lỗi. Ứng dụng không gửi mã ghép đôi, khóa ADB, nhật ký hoặc dữ liệu sử dụng tới máy chủ của BEAT. BEAT không bán dữ liệu của ứng dụng hoặc chia sẻ dữ liệu đó để quảng cáo.</p>
+        <p>Google Play, Android, Samsung và các ứng dụng bạn mở trong phiên desktop xử lý dữ liệu theo chính sách của từng bên. Khi bạn mở trang chính sách trên GitHub Pages, GitHub có thể lưu địa chỉ IP để bảo mật. Trang này không nhúng công cụ theo dõi. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Chính sách quyền riêng tư của GitHub</a>.</p>
+      </section>
+      <section class="section">
+        <h2>Lưu trữ, xóa và thu hồi quyền</h2>
+        <p>Cài đặt và khóa ghép đôi riêng của DexB được giữ trên máy cho đến khi bạn xóa dữ liệu ứng dụng hoặc gỡ cài đặt. Android có thể giữ mục ghép đôi sau khi gỡ. Để thu hồi quyền, vào <strong>Gỡ lỗi không dây → Thiết bị đã ghép nối</strong> và chọn quên mục <strong>DexB@BEAT</strong>. Bạn cũng có thể tắt Gỡ lỗi không dây trong Cài đặt Android.</p>
+        <p>Hãy tắt DeX trước khi gỡ DexB. Dịch vụ cố gắng khôi phục cấu hình và dọn tệp của nó khi phát hiện app đã bị gỡ. Nếu quá trình khôi phục bị gián đoạn, một số tệp hoặc cài đặt có thể còn lại.</p>
+      </section>
+      <section class="section">
+        <h2>Hỗ trợ và yêu cầu về dữ liệu</h2>
+        <p>Nếu bạn gửi email, BEAT và nhà cung cấp email sẽ nhận địa chỉ gửi, nội dung và tệp bạn đính kèm. BEAT dùng thông tin đó để xử lý yêu cầu và giữ thư trong thời gian cần thiết để hỗ trợ hoặc đáp ứng nghĩa vụ pháp lý. Bạn có thể liên hệ để hỏi, sửa hoặc yêu cầu xóa thông tin đã gửi, tùy theo luật áp dụng.</p>
+        <p>Liên hệ BEAT tại Việt Nam qua <a href="mailto:kieukute2k4@gmail.com">kieukute2k4@gmail.com</a>.</p>
+      </section>
+      <section class="section">
+        <h2>Thay đổi chính sách</h2>
+        <p>BEAT sẽ cập nhật trang này khi cách DexB xử lý dữ liệu thay đổi. Ngày ở đầu trang là ngày của bản chính sách hiện tại.</p>
+      </section>
+    </article>
+    <article class="document" id="english" lang="en" aria-labelledby="english-title">
+      <header class="hero">
+        <h1 id="english-title">Privacy Policy</h1>
+        <p class="lead">This policy explains how DexB, an Android app published by BEAT, handles data when you use an external display.</p>
+        <div class="document-meta">
+          <time datetime="2026-11-13">Updated 13 November 2026</time>
+          <a class="language-link" href="#vietnamese" lang="vi">Tiếng Việt</a>
+        </div>
+      </header>
+      <section class="section">
+        <h2>Information DexB handles on your device</h2>
+        <ul>
+          <li><strong>Wireless debugging.</strong> DexB uses the local network to discover and connect to Android’s ADB service on the same phone. The code you enter through the notification is used to pair with Android. DexB keeps its ADB identity in app-private storage and uses a local authentication token for service commands.</li>
+          <li><strong>External display and windows.</strong> DexB reads device, display, and window state to start, show, and end a desktop session. Window content appears on the external display you connect. DexB does not record it or send it to BEAT.</li>
+          <li><strong>Input devices.</strong> DexB identifies the mouse and keyboard to route them to the external display. It processes certain mouse clicks as they happen and does not store typing or input history.</li>
+          <li><strong>Settings and diagnostics.</strong> DexB saves pairing state, auto-start preferences, and Quick Settings tile status. Its service may keep temporary files, recovery information, and local logs with display identifiers, session state, and error details. It verifies the installation source and app signature on the device.</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>Permissions, connections, and sharing</h2>
+        <p>Network and Wi-Fi permissions support local ADB discovery and connectivity. Notifications let you enter the pairing code and see the result. The pairing service can run while you are in Android Settings. DexB does not request access to contacts, location, the camera, or the microphone.</p>
+        <p>DexB requires no account and includes no ads, behavioral analytics, or automatic crash uploads. The app does not send pairing codes, ADB keys, logs, or usage data to BEAT servers. BEAT does not sell app data or share it for advertising.</p>
+        <p>Google Play, Android, Samsung, and apps you open in the desktop session handle data under their respective policies. When you visit this policy on GitHub Pages, GitHub may log your IP address for security. This page embeds no tracking tools. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+      </section>
+      <section class="section">
+        <h2>Storage, deletion, and revoking access</h2>
+        <p>DexB’s app-private settings and pairing key remain on the phone until you clear app data or uninstall. Android may retain the pairing entry after uninstall. To revoke authorization, open <strong>Wireless debugging → Paired devices</strong> and forget <strong>DexB@BEAT</strong>. You can also turn off Wireless debugging in Android Settings.</p>
+        <p>Turn off DeX before uninstalling DexB. The local service attempts to restore settings and remove its files when it detects uninstall. Some files or settings may remain if cleanup is interrupted.</p>
+      </section>
+      <section class="section">
+        <h2>Support and privacy requests</h2>
+        <p>If you email support, BEAT and the email providers receive your address, message, and any files you attach. BEAT uses this information to handle the request and retains it as needed for support or legal obligations. You may request access, correction, or deletion of information you sent, subject to applicable law.</p>
+        <p>Contact BEAT in Vietnam at <a href="mailto:kieukute2k4@gmail.com">kieukute2k4@gmail.com</a>.</p>
+      </section>
+      <section class="section">
+        <h2>Policy changes</h2>
+        <p>BEAT will update this page if DexB’s data handling changes. The date at the top identifies the current policy.</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
