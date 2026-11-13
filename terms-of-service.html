@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Điều khoản sử dụng · DexB</title>
+  <style>
+        :root {
+            color-scheme: dark;
+            --bg: #0b0f14;
+            --panel: #121922;
+            --panel-2: #18212b;
+            --text: #eef4fb;
+            --muted: #aab7c7;
+            --accent: #8fd9ff;
+            --line: #283445;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background:
+                radial-gradient(circle at top, rgba(255, 255, 255, 0.05), transparent 42%),
+                linear-gradient(180deg, #0d1218 0%, var(--bg) 100%);
+            color: var(--text);
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.65;
+        }
+
+        body {
+            padding: 32px 18px 64px;
+        }
+
+        .wrap {
+            max-width: 920px;
+            margin: 0 auto;
+        }
+
+        .hero,
+        .section {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            padding: 24px;
+            backdrop-filter: blur(8px);
+        }
+
+        .hero {
+            margin-bottom: 18px;
+        }
+
+        .section {
+            margin-bottom: 14px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 3.8vw, 3rem);
+            letter-spacing: -0.03em;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        h3 {
+            font-size: 1rem;
+            color: #d8e7f8;
+        }
+
+        p,
+        li {
+            color: var(--muted);
+            margin: 0 0 10px;
+        }
+
+        ul {
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 14px 0 0;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            min-height: 34px;
+            padding: 0 12px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--panel-2);
+            color: #d7e8fa;
+            font-size: 0.92rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 16px;
+        }
+
+        .note {
+            border-left: 3px solid var(--accent);
+            padding-left: 12px;
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 1px 6px;
+            border-radius: 6px;
+            color: #f2f7fd;
+        }
+
+        .document-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px 14px;
+            color: var(--muted);
+            font-size: .92rem;
+        }
+
+        #english:not(:target), main:has(#english:target) #vietnamese {
+            display: none;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 4px;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 18px 14px 32px;
+            }
+
+            .hero, .section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="document" id="vietnamese" aria-labelledby="vietnamese-title">
+      <header class="hero">
+        <h1 id="vietnamese-title">Điều khoản sử dụng</h1>
+        <p class="lead">Điều khoản áp dụng khi bạn sử dụng DexB để mở không gian làm việc trên màn hình ngoài.</p>
+        <div class="document-meta">
+          <time datetime="2026-11-13">Cập nhật 13/11/2026</time>
+          <a class="language-link" href="#english" lang="en">English</a>
+        </div>
+      </header>
+      <section class="section">
+        <h2>Phạm vi sử dụng</h2>
+        <p>DexB là tiện ích Android của BEAT, phát triển tại Việt Nam. Khi cài đặt hoặc sử dụng DexB, bạn đồng ý với điều khoản này trong phạm vi pháp luật cho phép. Cách ứng dụng xử lý dữ liệu được mô tả trong <a href="privacy-policy.html">Chính sách quyền riêng tư</a>.</p>
+      </section>
+      <section class="section">
+        <h2>Thiết bị và Gỡ lỗi không dây</h2>
+        <p>DexB mở không gian làm việc trên màn hình ngoài từ thiết bị Samsung tương thích. Bản hiện tại yêu cầu Android 17 trở lên và thiết bị có khả năng xuất hình có dây. Tính năng phụ thuộc vào mẫu máy, phiên bản One UI, màn hình và bộ chuyển đổi.</p>
+        <p>DexB dùng quyền ADB mà bạn cấp qua Gỡ lỗi không dây để quản lý phiên desktop. Chỉ ghép đôi trên thiết bị bạn sở hữu hoặc được phép quản lý. Bạn có thể thu hồi quyền trong danh sách thiết bị đã ghép của Android.</p>
+      </section>
+      <section class="section">
+        <h2>Phiên desktop và khôi phục cài đặt</h2>
+        <p>DexB có thể tạm thay đổi chế độ xuất hình, thanh điều hướng, bố cục cửa sổ và cách định tuyến chuột, bàn phím. Khi tắt DeX hoặc chuyển sang phản chiếu, ứng dụng có thể đóng các cửa sổ của phiên và cố gắng khôi phục cài đặt trước đó. Hãy lưu công việc trước khi kết thúc phiên hoặc rút cáp.</p>
+        <p>Bạn có thể chọn tự mở DeX khi kết nối màn hình ngoài. Sau khi cập nhật DexB, việc thay dịch vụ cần kết nối ADB hợp lệ. Nếu phiên đang chạy, quá trình thay dịch vụ có thể đóng các cửa sổ đang mở rồi khởi động một phiên mới.</p>
+      </section>
+      <section class="section">
+        <h2>Giấy phép, giao dịch và sử dụng hợp lệ</h2>
+        <p>BEAT cấp cho bạn quyền sử dụng DexB có giới hạn, không độc quyền và không chuyển nhượng trên thiết bị bạn sở hữu hoặc được phép quản lý. Bạn đồng ý không dùng DexB để kiểm soát thiết bị khi chưa được phép, can thiệp vào dữ liệu của người khác hoặc thực hiện hành vi trái pháp luật.</p>
+        <p>Nếu nơi phân phối thu phí, việc thanh toán và hoàn tiền tuân theo điều khoản của nơi phân phối và quyền của bạn theo pháp luật áp dụng. DexB không trực tiếp xử lý thông tin thẻ thanh toán. Các thành phần bên thứ ba tuân theo giấy phép đi kèm.</p>
+      </section>
+      <section class="section">
+        <h2>Nền tảng và cập nhật</h2>
+        <p>DexB là ứng dụng độc lập do BEAT phát hành. Samsung và Google vận hành các nền tảng của họ theo điều khoản riêng. BEAT có thể cập nhật DexB để cải thiện tính năng, bảo mật và tương thích.</p>
+      </section>
+      <section class="section">
+        <h2>Tính tương thích và trách nhiệm</h2>
+        <p>Trong phạm vi pháp luật cho phép, DexB được cung cấp theo tình trạng và khả năng sẵn có. BEAT không bảo đảm tương thích với mọi thiết bị, phụ kiện hoặc bản cập nhật hệ thống. Các quyền bắt buộc của người tiêu dùng và trách nhiệm mà pháp luật yêu cầu vẫn được áp dụng.</p>
+        <p>Điều khoản này áp dụng theo pháp luật Việt Nam, đồng thời tôn trọng các quyền bắt buộc theo pháp luật nơi bạn cư trú. <a href="https://vanban.chinhphu.vn/?classid=1&amp;docid=208363&amp;pageid=27160">Luật Bảo vệ quyền lợi người tiêu dùng Việt Nam</a>.</p>
+      </section>
+      <section class="section">
+        <h2>Ngừng sử dụng và liên hệ</h2>
+        <p>Bạn có thể ngừng sử dụng bất kỳ lúc nào. Trước khi gỡ ứng dụng, hãy tắt DeX và kiểm tra màn hình đã trở lại chế độ bình thường. Bạn có thể quên mục ghép nối DexB trong Cài đặt Android để thu hồi quyền ADB.</p>
+        <p>BEAT sẽ đăng các thay đổi điều khoản tại trang này. Liên hệ qua <a href="mailto:kieukute2k4@gmail.com">kieukute2k4@gmail.com</a>.</p>
+      </section>
+    </article>
+    <article class="document" id="english" lang="en" aria-labelledby="english-title">
+      <header class="hero">
+        <h1 id="english-title">Terms of Service</h1>
+        <p class="lead">These terms apply when you use DexB to open a desktop workspace on an external display.</p>
+        <div class="document-meta">
+          <time datetime="2026-11-13">Updated 13 November 2026</time>
+          <a class="language-link" href="#vietnamese" lang="vi">Tiếng Việt</a>
+        </div>
+      </header>
+      <section class="section">
+        <h2>Scope</h2>
+        <p>DexB is an Android utility published by BEAT in Vietnam. By installing or using DexB, you agree to these terms to the extent permitted by law. See the <a href="privacy-policy.html#english">Privacy Policy</a> for how the app handles data.</p>
+      </section>
+      <section class="section">
+        <h2>Device requirements and Wireless debugging</h2>
+        <p>DexB opens a desktop workspace on an external display from compatible Samsung devices. The current release requires Android 17 or later and wired display output. Functionality depends on the device, One UI version, display, and adapter.</p>
+        <p>DexB uses the ADB authorization you grant through Wireless debugging to manage the desktop session. Pair only devices you own or are authorized to manage. You can revoke that authorization in Android’s paired-device list.</p>
+      </section>
+      <section class="section">
+        <h2>Desktop sessions and restoring settings</h2>
+        <p>DexB may temporarily change display output mode, navigation settings, window layout, and mouse and keyboard routing. Turning off DeX or returning to mirroring may close the session’s windows and will prompt DexB to attempt to restore the previous settings. Save your work before ending a session or unplugging the display.</p>
+        <p>You can choose to start DeX automatically when an external display connects. After updating DexB, switching the local service requires a valid ADB connection. If a session is active, switching services may close its windows and start a new session.</p>
+      </section>
+      <section class="section">
+        <h2>License, transactions, and authorized use</h2>
+        <p>BEAT grants you a limited, non-exclusive, non-transferable license to use DexB on devices you own or are authorized to manage. You agree to use DexB lawfully and refrain from controlling devices without permission or interfering with other people’s data.</p>
+        <p>If a distributor charges for access, payments and refunds follow that distributor’s terms and your rights under applicable law. DexB does not directly process payment card information. Third-party components remain subject to their accompanying licenses.</p>
+      </section>
+      <section class="section">
+        <h2>Platforms and updates</h2>
+        <p>DexB is independently published by BEAT. Samsung and Google operate their platforms under their own terms. BEAT may update DexB to improve functionality, security, and compatibility.</p>
+      </section>
+      <section class="section">
+        <h2>Compatibility and liability</h2>
+        <p>To the extent permitted by law, DexB is provided as available. BEAT does not guarantee compatibility with every device, accessory, or system update. Mandatory consumer rights and liability that the law does not permit us to exclude remain in effect.</p>
+        <p>Vietnamese law governs these terms, subject to mandatory protections in your place of residence. <a href="https://vanban.chinhphu.vn/?classid=1&amp;docid=208363&amp;pageid=27160">Vietnam’s Law on Protection of Consumers’ Rights</a>.</p>
+      </section>
+      <section class="section">
+        <h2>Ending use and contact</h2>
+        <p>You may stop using DexB at any time. Before uninstalling, turn off DeX and confirm that the display has returned to its normal mode. Forget the DexB pairing in Android Settings to revoke ADB authorization.</p>
+        <p>BEAT will publish changes to these terms on this page. Contact <a href="mailto:kieukute2k4@gmail.com">kieukute2k4@gmail.com</a> with questions.</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
